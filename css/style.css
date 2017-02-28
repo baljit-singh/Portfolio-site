@@ -1,0 +1,78 @@
+body {
+  background-color: white;
+  color: #474747;
+  font-family: "Raleway", sans-serif; }
+
+p {
+  color: #909090; }
+
+h3 {
+  text-align: center; }
+
+span.divider {
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: #AD8B60;
+  margin: auto; }
+
+.imgSection {
+  background-image: url("../img/workspace3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2); }
+  .imgSection .homeContent {
+    text-align: center;
+    margin-top: 210px; }
+    .imgSection .homeContent h1 {
+      font-weight: 800;
+      font-size: 79px; }
+    .imgSection .homeContent .bio {
+      font-size: 50px;
+      color: #474747; }
+    .imgSection .homeContent .btn {
+      background-color: #AD8B60;
+      border-radius: 3px;
+      margin-top: 30px;
+      font-family: "Raleway", sans-serif;
+      color: white; }
+
+.aboutSection {
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  .aboutSection .aboutContent {
+    margin-top: 50px; }
+    .aboutSection .aboutContent img {
+      border-radius: 50%;
+      margin-bottom: 40px; }
+    .aboutSection .aboutContent .detailBio {
+      margin-top: 30px; }
+    .aboutSection .aboutContent .btn {
+      background-color: #AD8B60;
+      border-radius: 3px;
+      margin-top: 30px;
+      font-family: "Raleway", sans-serif;
+      color: white;
+      margin-top: 20px; }
+
+.strengthSection {
+  background-color: #171717; }
+
+@media (max-width: 1200px) {
+  .imgSection .homeContent h1 {
+    font-size: 65px; }
+  .imgSection .homeContent .bio {
+    font-size: 40px; } }
+@media (max-width: 560px) {
+  .imgSection .homeContent h1 {
+    font-size: 55px; }
+  .imgSection .homeContent .bio {
+    font-size: 30px; } }
+@media (max-width: 460px) {
+  .imgSection .homeContent h1 {
+    font-size: 45px; }
+  .imgSection .homeContent .bio {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
