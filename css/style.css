@@ -13,6 +13,14 @@ span.divider {
   background-color: #AD8B60;
   margin: auto; }
 
+span.dividerTwo {
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #AD8B60;
+  margin: auto;
+  text-align: center; }
+
 .imgSection {
   background-image: url("../img/comp2.jpg");
   background-attachment: fixed;
@@ -82,6 +90,37 @@ span.divider {
     transition: 0.3s ease; }
     .quoteSection .btn:hover {
       background-color: #90714a; }
+
+.contactSection {
+  text-align: center;
+  padding-top: 30px; }
+  .contactSection i {
+    margin-top: 50px;
+    font-size: 220px; }
+  .contactSection h1 {
+    font-size: 50px; }
+  .contactSection h4 {
+    padding-bottom: 40px; }
+
+footer {
+  background-color: #F5F5F5;
+  padding: 50px 0 30px 0;
+  text-align: center; }
+  footer ul {
+    list-style: none;
+    margin-bottom: 15px; }
+    footer ul li {
+      display: inline-block;
+      font-size: 25px;
+      margin-right: 25px; }
+      footer ul li a {
+        color: #474740;
+        transition: 0.3s ease;
+        cursor: pointer; }
+        footer ul li a:hover {
+          color: #AD8B60; }
+  footer .copyright {
+    margin-top: 30px; }
 
 @media (max-width: 1200px) {
   .imgSection .homeContent h1 {

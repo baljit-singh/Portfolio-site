@@ -2,6 +2,7 @@ $buttonColor: #AD8B60
 $background-color: #0C0C0C
 $textColor: #909090
 $bodyTextColor: #474740
+$footerColor: #F5F5F5
 
 
 body
@@ -29,6 +30,14 @@ span.divider
 	height: 2px
 	background-color: $buttonColor
 	margin: auto
+
+span.dividerTwo
+	display: block
+	width: 100px
+	height: 3px
+	background-color: $buttonColor
+	margin: auto
+	text-align: center
 
 .imgSection
 	background: 
@@ -111,6 +120,53 @@ span.divider
 
 		&:hover
 			background-color: darken($buttonColor, 10%)
+
+.contactSection
+	// background-color: $footerColor
+	text-align: center
+	padding-top: 30px	
+
+	i
+		margin-top: 50px
+		font-size: 220px	
+
+	h1
+		font-size: 50px
+
+	h4
+		padding-bottom: 40px
+
+	
+
+		// .highlight
+		// 	font-weight: bold
+
+footer
+	background-color: $footerColor
+	padding: 50px 0 30px 0
+	text-align: center
+
+	ul
+		list-style: none
+		margin-bottom: 15px
+
+		li
+			display: inline-block
+			font-size: 25px
+			margin-right: 25px
+
+			a
+				color: $bodyTextColor
+				transition: 0.3s ease
+				cursor: pointer
+
+				&:hover
+					color: $buttonColor
+
+	.copyright
+		margin-top: 30px
+
+
 
 
 @media (max-width: 1200px)
