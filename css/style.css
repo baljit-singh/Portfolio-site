@@ -1,10 +1,7 @@
 body {
   background-color: white;
-  color: #474747;
+  color: #474740;
   font-family: "Raleway", sans-serif; }
-
-p {
-  color: #909090; }
 
 h3 {
   text-align: center; }
@@ -17,11 +14,11 @@ span.divider {
   margin: auto; }
 
 .imgSection {
-  background-image: url("../img/workspace3.jpg");
+  background-image: url("../img/comp2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2); }
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0); }
   .imgSection .homeContent {
     text-align: center;
     margin-top: 210px; }
@@ -30,34 +27,61 @@ span.divider {
       font-size: 79px; }
     .imgSection .homeContent .bio {
       font-size: 50px;
-      color: #474747; }
+      color: #474740; }
     .imgSection .homeContent .btn {
       background-color: #AD8B60;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
-      color: white; }
+      color: white;
+      transition: 0.3s ease; }
+      .imgSection .homeContent .btn:hover {
+        background-color: #90714a; }
 
 .aboutSection {
-  padding-top: 30px;
-  padding-bottom: 50px; }
+  padding: 30px 0 50px 0; }
   .aboutSection .aboutContent {
-    margin-top: 50px; }
+    margin-top: 90px; }
     .aboutSection .aboutContent img {
       border-radius: 50%;
       margin-bottom: 40px; }
-    .aboutSection .aboutContent .detailBio {
+  .aboutSection .rightAboutContent {
+    padding: 0 50px; }
+    .aboutSection .rightAboutContent .detailBio {
       margin-top: 30px; }
-    .aboutSection .aboutContent .btn {
+    .aboutSection .rightAboutContent .btn {
       background-color: #AD8B60;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
       color: white;
-      margin-top: 20px; }
+      margin-top: 20px;
+      transition: 0.3s ease; }
+      .aboutSection .rightAboutContent .btn:hover {
+        box-shadow: 8px 8px 16px -6px black; }
 
-.strengthSection {
-  background-color: #171717; }
+.workSection {
+  background-color: #F5F5F5;
+  padding: 30px 40px 50px 40px; }
+
+.quoteSection {
+  box-shadow: inset 0 0 0 1000px rgba(173, 139, 96, 0.8);
+  background-image: url("../img/comp1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 90px 0 70px 0px;
+  color: white; }
+  .quoteSection .btn {
+    background-color: #AD8B60;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3s ease; }
+    .quoteSection .btn:hover {
+      background-color: #90714a; }
 
 @media (max-width: 1200px) {
   .imgSection .homeContent h1 {
@@ -74,5 +98,11 @@ span.divider {
     font-size: 45px; }
   .imgSection .homeContent .bio {
     font-size: 20px; } }
+@media (max-width: 950px) {
+  .quoteSection h1 {
+    font-size: 30px; } }
+@media (max-width: 750px) {
+  .quoteSection h1 {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
