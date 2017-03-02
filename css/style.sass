@@ -7,7 +7,7 @@ $footerColor: #F5F5F5
 
 body
 	background-color: white
-	color: $bodyTextColor
+	// color: $bodyTextColor
 	font-family: 'Raleway', sans-serif
 
 // p
@@ -20,6 +20,9 @@ body
 	margin-top: 30px		
 	font-family: 'Raleway', sans-serif
 	color: white
+
+=paraTopMargin
+	margin-top: 30px
 
 h3
 	text-align: center
@@ -58,7 +61,7 @@ span.dividerTwo
 			
 		.bio
 			font-size: 50px
-			color: $bodyTextColor
+			// color: $bodyTextColor
 			
 		.btn
 			+btn()
@@ -83,7 +86,7 @@ span.dividerTwo
 		padding: 0 50px
 
 		.detailBio
-			margin-top: 30px
+			+paraTopMargin()
 
 		.btn
 			+btn()
@@ -94,14 +97,32 @@ span.dividerTwo
 				box-shadow: 8px 8px 16px -6px black
 
 .workSection
-	// background: 
-	// 	image: url('../img/workspace7.jpg')
-	// 	attachment: fixed
-	// 	size: cover
-	// 	position: center
-	// box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0.2)
-	background-color: #F5F5F5
 	padding: 30px 40px 50px 40px
+
+	.contentBorder
+		border-bottom: 1px solid $buttonColor
+
+	.workContent
+		margin-top: 60px
+		padding-bottom: 50px
+
+		img
+			margin-bottom: 40px
+			margin-top: 30px
+			box-shadow: 8px 8px 16px -6px black
+
+		.detailDesc
+			+paraTopMargin()
+
+		.btn
+			+btn()
+			margin-top: 20px
+			transition: 0.3s ease
+
+			&:hover
+				box-shadow: 8px 8px 16px -6px black
+
+
 
 .quoteSection
 	box-shadow: inset 0 0 0 1000px rgba(173,139,96, 0.8)
@@ -122,7 +143,7 @@ span.dividerTwo
 			background-color: darken($buttonColor, 10%)
 
 .contactSection
-	// background-color: $footerColor
+	background-color: $footerColor
 	text-align: center
 	padding-top: 30px	
 
@@ -142,7 +163,7 @@ span.dividerTwo
 		// 	font-weight: bold
 
 footer
-	background-color: $footerColor
+	background-color: darken($footerColor, 10%)
 	padding: 50px 0 30px 0
 	text-align: center
 
