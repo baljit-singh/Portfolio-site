@@ -1,4 +1,4 @@
-$buttonColor: #AD8B60
+$buttonColor: #0082D6
 $background-color: #0C0C0C
 $textColor: #909090
 $bodyTextColor: #474740
@@ -9,17 +9,18 @@ body
 	background-color: white
 	// color: $bodyTextColor
 	font-family: 'Raleway', sans-serif
+	
 
-// p
-// 	color: $textColor
-	
-	
 =btn
 	background-color: $buttonColor
+	// background-color: transparent
+	// border: 2px solid white
+	// border: 2px solid $buttonColor
 	border-radius: 3px
 	margin-top: 30px		
 	font-family: 'Raleway', sans-serif
 	color: white
+	// color: $buttonColor
 
 =paraTopMargin
 	margin-top: 30px
@@ -44,11 +45,14 @@ span.dividerTwo
 
 .imgSection
 	background: 
-		image: url('../img/comp2.jpg')
+		image: url('../img/homeBackground.jpg')
 		attachment: fixed
 		size: cover
 		position: center
-	box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0)
+	// box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0.2)
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.6)
+	// color: darken(white, 5%)
+	color: white
 
 
 	.homeContent
@@ -58,6 +62,9 @@ span.dividerTwo
 		h1
 			font-weight: 800
 			font-size: 79px
+
+			// span
+			// 	color: $buttonColor
 			
 		.bio
 			font-size: 50px
@@ -94,6 +101,8 @@ span.dividerTwo
 			transition: 0.3s ease
 
 			&:hover
+				background-color: $buttonColor
+				color: white
 				box-shadow: 8px 8px 16px -6px black
 
 .workSection
@@ -120,24 +129,29 @@ span.dividerTwo
 			transition: 0.3s ease
 
 			&:hover
+				background-color: $buttonColor
+				color: white
 				box-shadow: 8px 8px 16px -6px black
 
 
 
 .quoteSection
-	box-shadow: inset 0 0 0 1000px rgba(173,139,96, 0.8)
+	box-shadow: inset 0 0 0 1000px rgba(0,130,214, 0.9)
+	// box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.6)
 	background:
-		image: url('../img/comp1.jpg')
+		image: url('../img/quoteBackground.jpg')
 		attachment: fixed
 		size: cover
+		// position: bottom
 	text-align: center
-	padding: 90px 0 70px 0px
+	padding: 80px 0 70px 0px
 	color: white
 
 	.btn
 		+btn()
-		border: 2px solid white
+		// border: 2px solid white
 		transition: 0.3s ease
+		border: 2px solid white
 
 		&:hover
 			background-color: darken($buttonColor, 10%)

@@ -9,23 +9,24 @@ span.divider {
   display: block;
   width: 150px;
   height: 2px;
-  background-color: #AD8B60;
+  background-color: #0082D6;
   margin: auto; }
 
 span.dividerTwo {
   display: block;
   width: 100px;
   height: 3px;
-  background-color: #AD8B60;
+  background-color: #0082D6;
   margin: auto;
   text-align: center; }
 
 .imgSection {
-  background-image: url("../img/comp2.jpg");
+  background-image: url("../img/homeBackground.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0); }
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  color: white; }
   .imgSection .homeContent {
     text-align: center;
     margin-top: 210px; }
@@ -35,14 +36,14 @@ span.dividerTwo {
     .imgSection .homeContent .bio {
       font-size: 50px; }
     .imgSection .homeContent .btn {
-      background-color: #AD8B60;
+      background-color: #0082D6;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
       color: white;
       transition: 0.3s ease; }
       .imgSection .homeContent .btn:hover {
-        background-color: #90714a; }
+        background-color: #0063a3; }
 
 .aboutSection {
   padding: 30px 0 50px 0; }
@@ -56,7 +57,7 @@ span.dividerTwo {
     .aboutSection .rightAboutContent .detailBio {
       margin-top: 30px; }
     .aboutSection .rightAboutContent .btn {
-      background-color: #AD8B60;
+      background-color: #0082D6;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
@@ -64,12 +65,14 @@ span.dividerTwo {
       margin-top: 20px;
       transition: 0.3s ease; }
       .aboutSection .rightAboutContent .btn:hover {
+        background-color: #0082D6;
+        color: white;
         box-shadow: 8px 8px 16px -6px black; }
 
 .workSection {
   padding: 30px 40px 50px 40px; }
   .workSection .contentBorder {
-    border-bottom: 1px solid #AD8B60; }
+    border-bottom: 1px solid #0082D6; }
   .workSection .workContent {
     margin-top: 60px;
     padding-bottom: 50px; }
@@ -80,7 +83,7 @@ span.dividerTwo {
     .workSection .workContent .detailDesc {
       margin-top: 30px; }
     .workSection .workContent .btn {
-      background-color: #AD8B60;
+      background-color: #0082D6;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
@@ -88,26 +91,28 @@ span.dividerTwo {
       margin-top: 20px;
       transition: 0.3s ease; }
       .workSection .workContent .btn:hover {
+        background-color: #0082D6;
+        color: white;
         box-shadow: 8px 8px 16px -6px black; }
 
 .quoteSection {
-  box-shadow: inset 0 0 0 1000px rgba(173, 139, 96, 0.8);
-  background-image: url("../img/comp1.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 130, 214, 0.9);
+  background-image: url("../img/quoteBackground.jpg");
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  padding: 90px 0 70px 0px;
+  padding: 80px 0 70px 0px;
   color: white; }
   .quoteSection .btn {
-    background-color: #AD8B60;
+    background-color: #0082D6;
     border-radius: 3px;
     margin-top: 30px;
     font-family: "Raleway", sans-serif;
     color: white;
-    border: 2px solid white;
-    transition: 0.3s ease; }
+    transition: 0.3s ease;
+    border: 2px solid white; }
     .quoteSection .btn:hover {
-      background-color: #90714a; }
+      background-color: #0063a3; }
 
 .contactSection {
   background-color: #F5F5F5;
@@ -137,7 +142,7 @@ footer {
         transition: 0.3s ease;
         cursor: pointer; }
         footer ul li a:hover {
-          color: #AD8B60; }
+          color: #0082D6; }
   footer .copyright {
     margin-top: 30px; }
 
