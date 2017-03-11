@@ -1,4 +1,5 @@
 $buttonColor: #0082D6
+// $buttonColor: black
 $background-color: #0C0C0C
 $textColor: #909090
 $bodyTextColor: #474740
@@ -58,16 +59,19 @@ span.dividerTwo
 	.homeContent
 		text-align: center
 		margin-top: 210px
+		letter-spacing: 3px
 
 		h1
 			font-weight: 800
 			font-size: 79px
+
 
 			// span
 			// 	color: $buttonColor
 			
 		.bio
 			font-size: 50px
+
 			// color: $bodyTextColor
 			
 		.btn
@@ -115,10 +119,10 @@ span.dividerTwo
 		margin-top: 60px
 		padding-bottom: 50px
 
-		img
+		img.workImg
 			margin-bottom: 40px
 			margin-top: 30px
-			box-shadow: 8px 8px 16px -6px black
+			box-shadow: 10px 10px 36px -6px black
 
 		.detailDesc
 			+paraTopMargin()
@@ -157,13 +161,57 @@ span.dividerTwo
 			background-color: darken($buttonColor, 10%)
 
 .contactSection
+	background: 
+		image: url('../img/12.jpeg')
+		attachment: fixed
+		size: cover
+		position: center
+	box-shadow: inset 0 0 0 1000px rgba(0,130,214, 0.9)
+	// box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.94)
 	background-color: $footerColor
 	text-align: center
+	color: white
 	padding-top: 30px	
 
-	i
-		margin-top: 50px
-		font-size: 220px	
+	.contactDivider
+		margin-bottom: 50px
+		background-color: white
+
+	.speechBubble
+		// position: relative
+		height: 170px
+		width: 170px
+		margin: auto
+		// background-color: yellow
+		
+
+		i.icon-Speach-Bubble11
+			background: 
+				image: url('../img/SpeechBubble1111.png')
+				size: cover
+			display: block
+			// position: absolute
+			height: 170px
+			width: 170px
+
+			h4
+				margin-top: 50px
+				font-style: normal
+
+
+	// span
+		// background-color: white
+
+	span.sBubbleContent
+		.sBubble
+			font-size: 240px
+			margin: 10px 0 0 -100px
+			// text-align: center
+
+		.sBubbleText
+			font-size: 30px
+			margin: 90px 0 0 -20px
+			// text-align: center
 
 	h1
 		font-size: 50px
@@ -171,13 +219,10 @@ span.dividerTwo
 	h4
 		padding-bottom: 40px
 
-	
-
-		// .highlight
-		// 	font-weight: bold
 
 footer
-	background-color: darken($footerColor, 10%)
+	background-color: #2F3E47
+	// background-color: black
 	padding: 50px 0 30px 0
 	text-align: center
 
@@ -191,22 +236,25 @@ footer
 			margin-right: 25px
 
 			a
-				color: $bodyTextColor
+				color: #95A8B7
 				transition: 0.3s ease
 				cursor: pointer
 
 				&:hover
-					color: $buttonColor
+					color: white
+	.footerDivider
+		background-color: #95A8B7
 
 	.copyright
 		margin-top: 30px
-
+		color: #95A8B7
 
 
 
 @media (max-width: 1200px)
 	.imgSection
 		.homeContent
+			letter-spacing: 0px
 			h1
 				font-size: 65px
 
@@ -241,48 +289,6 @@ footer
 		h1
 			font-size: 25px
 
-// @media (max-width: 360px)
-// 	.quoteSection
-// 		padding-top: 30px
-		
-
-// @media (max-width: 720px)
-// 	.imgSection
-// 		.homeContent
-// 			h1
-// 				font-size: 50px
-
-// 			.bio
-// 				font-size: 30px
-
-// @media (min-width: 320px) and (max-width: 320px)
-// 	.imgSection
-// 		.homeContent
-// 			h1
-// 				font-size: 40px
-
-// 			.bio
-// 				font-size: 20px
-
-// @media (max-width: 720px)
-// 	.imgSection
-// 		.homeContent
-// 			h1
-// 				font-size: 50px
-
-// 			.bio
-// 				font-size: 30px
-
-// @media (min-width: 320px)
-// 	.imgSection
-// 		// padding-top: 100px
-
-// 		.homeContent
-// 			h1
-// 				font-size: 40px
-
-// 			.bio
-// 				font-size: 20px
 
 
 
