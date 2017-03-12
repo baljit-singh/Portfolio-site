@@ -3,6 +3,7 @@ $background-color: #0C0C0C
 $textColor: #909090
 $bodyTextColor: #474740
 $footerColor: #F5F5F5
+$homeButtonColor: #FFCC33
 
 
 body
@@ -10,15 +11,13 @@ body
 	
 
 =btn
-	background-color: $buttonColor
-	// background-color: transparent
-	// border: 2px solid white
-	// border: 2px solid $buttonColor
+	background-color: transparent
+	// border: 1px solid $homeButtonColor
 	border-radius: 3px
 	margin-top: 30px		
 	font-family: 'Raleway', sans-serif
-	color: white
-	// color: $buttonColor
+	// color: $homeButtonColor
+
 
 =paraTopMargin
 	margin-top: 30px
@@ -30,24 +29,24 @@ span.divider
 	display: block
 	width: 150px
 	height: 2px
-	background-color: $buttonColor
+	background-color: $bodyTextColor
 	margin: auto
 
 span.dividerTwo
 	display: block
 	width: 100px
 	height: 3px
-	background-color: $buttonColor
+	background-color: $homeButtonColor
 	margin: auto
 	text-align: center
 
 .imgSection
 	background: 
-		image: url('../img/14.jpeg')
+		image: url('../img/11.png')
 		attachment: fixed
 		size: cover
 		position: center
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.7)
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.8)
 	color: white
 
 	.homeContent
@@ -64,10 +63,13 @@ span.dividerTwo
 			
 		.btn
 			+btn()
+			border: 1px solid $homeButtonColor
+			color: $homeButtonColor
 			transition: 0.3s ease
 
 			&:hover
-				background-color: darken($buttonColor, 10%)
+				background-color: darken($homeButtonColor, 15%)
+				color: white
 
 .aboutSection
 	padding: 30px 0 50px 0
@@ -94,20 +96,22 @@ span.dividerTwo
 
 			.btn
 				+btn()
+				border: 2px solid $bodyTextColor
+				color: $bodyTextColor
 				margin-top: 20px
 				transition: 0.3s ease
 
 				&:hover
-					background-color: $buttonColor
+					background-color: $bodyTextColor
 					color: white
-					box-shadow: 8px 8px 16px -6px black
+					// box-shadow: 8px 8px 16px -6px black
 
 .workSection
 	padding: 30px 40px 50px 40px
 	background-color: white
 
 	.contentBorder
-		border-bottom: 1px solid $buttonColor
+		border-bottom: 1px solid $bodyTextColor
 
 	.workContent
 		margin-top: 60px
@@ -123,13 +127,15 @@ span.dividerTwo
 
 		.btn
 			+btn()
+			border: 2px solid $bodyTextColor
+			color: $bodyTextColor
 			margin-top: 20px
 			transition: 0.3s ease
 
 			&:hover
-				background-color: $buttonColor
+				background-color: $bodyTextColor
 				color: white
-				box-shadow: 8px 8px 16px -6px black
+				// box-shadow: 8px 8px 16px -6px black
 
 
 
@@ -147,12 +153,15 @@ span.dividerTwo
 
 	.btn
 		+btn()
+		border: 1px solid $homeButtonColor
+		color: $homeButtonColor
 		// border: 2px solid white
 		transition: 0.3s ease
 		// border: 2px solid white
 
 		&:hover
-			background-color: darken($buttonColor, 10%)
+			background-color: darken($homeButtonColor, 15%)
+			color: white
 
 .contactSection
 	background-color: darken($bodyTextColor, 15%)
@@ -163,7 +172,7 @@ span.dividerTwo
 
 	.contactDivider
 		margin-bottom: 50px
-		background-color: white
+		background-color: $homeButtonColor
 
 	.speechBubble
 		// position: relative
@@ -223,9 +232,9 @@ footer
 				cursor: pointer
 
 				&:hover
-					color: $buttonColor
+					color: $homeButtonColor
 	.footerDivider
-		background-color: white
+		background-color: $homeButtonColor
 
 	.copyright
 		margin-top: 30px

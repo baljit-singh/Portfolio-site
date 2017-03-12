@@ -8,23 +8,23 @@ span.divider {
   display: block;
   width: 150px;
   height: 2px;
-  background-color: #336593;
+  background-color: #474740;
   margin: auto; }
 
 span.dividerTwo {
   display: block;
   width: 100px;
   height: 3px;
-  background-color: #336593;
+  background-color: #FFCC33;
   margin: auto;
   text-align: center; }
 
 .imgSection {
-  background-image: url("../img/14.jpeg");
+  background-image: url("../img/11.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
   color: white; }
   .imgSection .homeContent {
     text-align: center;
@@ -36,14 +36,16 @@ span.dividerTwo {
     .imgSection .homeContent .bio {
       font-size: 50px; }
     .imgSection .homeContent .btn {
-      background-color: #336593;
+      background-color: transparent;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
-      color: white;
+      border: 1px solid #FFCC33;
+      color: #FFCC33;
       transition: 0.3s ease; }
       .imgSection .homeContent .btn:hover {
-        background-color: #264b6d; }
+        background-color: #e6ac00;
+        color: white; }
 
 .aboutSection {
   padding: 30px 0 50px 0;
@@ -61,23 +63,23 @@ span.dividerTwo {
       .aboutSection .aboutContent .rightAboutContent .detailBio {
         margin-top: 30px; }
       .aboutSection .aboutContent .rightAboutContent .btn {
-        background-color: #336593;
+        background-color: transparent;
         border-radius: 3px;
         margin-top: 30px;
         font-family: "Raleway", sans-serif;
-        color: white;
+        border: 2px solid #474740;
+        color: #474740;
         margin-top: 20px;
         transition: 0.3s ease; }
         .aboutSection .aboutContent .rightAboutContent .btn:hover {
-          background-color: #336593;
-          color: white;
-          box-shadow: 8px 8px 16px -6px black; }
+          background-color: #474740;
+          color: white; }
 
 .workSection {
   padding: 30px 40px 50px 40px;
   background-color: white; }
   .workSection .contentBorder {
-    border-bottom: 1px solid #336593; }
+    border-bottom: 1px solid #474740; }
   .workSection .workContent {
     margin-top: 60px;
     padding-bottom: 50px; }
@@ -88,17 +90,17 @@ span.dividerTwo {
     .workSection .workContent .detailDesc {
       margin-top: 30px; }
     .workSection .workContent .btn {
-      background-color: #336593;
+      background-color: transparent;
       border-radius: 3px;
       margin-top: 30px;
       font-family: "Raleway", sans-serif;
-      color: white;
+      border: 2px solid #474740;
+      color: #474740;
       margin-top: 20px;
       transition: 0.3s ease; }
       .workSection .workContent .btn:hover {
-        background-color: #336593;
-        color: white;
-        box-shadow: 8px 8px 16px -6px black; }
+        background-color: #474740;
+        color: white; }
 
 .quoteSection {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.85);
@@ -109,14 +111,16 @@ span.dividerTwo {
   padding: 80px 0 70px 0px;
   color: white; }
   .quoteSection .btn {
-    background-color: #336593;
+    background-color: transparent;
     border-radius: 3px;
     margin-top: 30px;
     font-family: "Raleway", sans-serif;
-    color: white;
+    border: 1px solid #FFCC33;
+    color: #FFCC33;
     transition: 0.3s ease; }
     .quoteSection .btn:hover {
-      background-color: #264b6d; }
+      background-color: #e6ac00;
+      color: white; }
 
 .contactSection {
   background-color: #1f1f1c;
@@ -125,7 +129,7 @@ span.dividerTwo {
   padding-top: 30px; }
   .contactSection .contactDivider {
     margin-bottom: 50px;
-    background-color: white; }
+    background-color: #FFCC33; }
   .contactSection .speechBubble {
     height: 170px;
     width: 170px;
@@ -166,9 +170,9 @@ footer {
         transition: 0.3s ease;
         cursor: pointer; }
         footer ul li a:hover {
-          color: #336593; }
+          color: #FFCC33; }
   footer .footerDivider {
-    background-color: white; }
+    background-color: #FFCC33; }
   footer .copyright {
     margin-top: 30px;
     color: white; }
