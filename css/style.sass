@@ -1,5 +1,4 @@
-$buttonColor: #0082D6
-// $buttonColor: black
+$buttonColor: #336593
 $background-color: #0C0C0C
 $textColor: #909090
 $bodyTextColor: #474740
@@ -7,8 +6,6 @@ $footerColor: #F5F5F5
 
 
 body
-	background-color: white
-	// color: $bodyTextColor
 	font-family: 'Raleway', sans-serif
 	
 
@@ -46,33 +43,24 @@ span.dividerTwo
 
 .imgSection
 	background: 
-		image: url('../img/homeBackground.jpg')
+		image: url('../img/14.jpeg')
 		attachment: fixed
 		size: cover
 		position: center
-	// box-shadow: inset 0 0 0 1000px rgba(255,255,255, 0.2)
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.6)
-	// color: darken(white, 5%)
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.7)
 	color: white
-
 
 	.homeContent
 		text-align: center
 		margin-top: 210px
-		letter-spacing: 3px
+		letter-spacing: 2px
 
 		h1
 			font-weight: 800
 			font-size: 79px
-
-
-			// span
-			// 	color: $buttonColor
 			
 		.bio
 			font-size: 50px
-
-			// color: $bodyTextColor
 			
 		.btn
 			+btn()
@@ -83,34 +71,40 @@ span.dividerTwo
 
 .aboutSection
 	padding: 30px 0 50px 0
+	background-color: #FBFBFC
 	
 
 	.aboutContent
 		margin-top: 90px
 
+		.displayPic
+			padding-left: 60px
+			margin-top: -30px
 
-		img
-			border-radius: 50%
-			margin-bottom: 40px
+			img
+				border-radius: 50%
+				// border: 5px solid $buttonColor
+				margin-bottom: 40px
 
-	.rightAboutContent
-		padding: 0 50px
+		.rightAboutContent
+			padding: 0 50px
 
-		.detailBio
-			+paraTopMargin()
+			.detailBio
+				+paraTopMargin()
 
-		.btn
-			+btn()
-			margin-top: 20px
-			transition: 0.3s ease
+			.btn
+				+btn()
+				margin-top: 20px
+				transition: 0.3s ease
 
-			&:hover
-				background-color: $buttonColor
-				color: white
-				box-shadow: 8px 8px 16px -6px black
+				&:hover
+					background-color: $buttonColor
+					color: white
+					box-shadow: 8px 8px 16px -6px black
 
 .workSection
 	padding: 30px 40px 50px 40px
+	background-color: white
 
 	.contentBorder
 		border-bottom: 1px solid $buttonColor
@@ -122,7 +116,7 @@ span.dividerTwo
 		img.workImg
 			margin-bottom: 40px
 			margin-top: 30px
-			box-shadow: 10px 10px 36px -6px black
+			box-shadow: 10px 10px 29px -6px black
 
 		.detailDesc
 			+paraTopMargin()
@@ -140,8 +134,8 @@ span.dividerTwo
 
 
 .quoteSection
-	box-shadow: inset 0 0 0 1000px rgba(0,130,214, 0.9)
-	// box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.6)
+	// box-shadow: inset 0 0 0 1000px rgba(0,130,214, 0.9)
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.85)
 	background:
 		image: url('../img/quoteBackground.jpg')
 		attachment: fixed
@@ -155,20 +149,14 @@ span.dividerTwo
 		+btn()
 		// border: 2px solid white
 		transition: 0.3s ease
-		border: 2px solid white
+		// border: 2px solid white
 
 		&:hover
 			background-color: darken($buttonColor, 10%)
 
 .contactSection
-	background: 
-		image: url('../img/12.jpeg')
-		attachment: fixed
-		size: cover
-		position: center
-	box-shadow: inset 0 0 0 1000px rgba(0,130,214, 0.9)
-	// box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.94)
-	background-color: $footerColor
+	background-color: darken($bodyTextColor, 15%)
+	// background-color: darken($buttonColor, 20%)
 	text-align: center
 	color: white
 	padding-top: 30px	
@@ -198,20 +186,15 @@ span.dividerTwo
 				margin-top: 50px
 				font-style: normal
 
-
-	// span
-		// background-color: white
-
 	span.sBubbleContent
 		.sBubble
 			font-size: 240px
 			margin: 10px 0 0 -100px
-			// text-align: center
-
+		
 		.sBubbleText
 			font-size: 30px
 			margin: 90px 0 0 -20px
-			// text-align: center
+			
 
 	h1
 		font-size: 50px
@@ -221,8 +204,7 @@ span.dividerTwo
 
 
 footer
-	background-color: #2F3E47
-	// background-color: black
+	background-color: darken($bodyTextColor, 20%)
 	padding: 50px 0 30px 0
 	text-align: center
 
@@ -236,18 +218,18 @@ footer
 			margin-right: 25px
 
 			a
-				color: #95A8B7
+				color: white
 				transition: 0.3s ease
 				cursor: pointer
 
 				&:hover
-					color: white
+					color: $buttonColor
 	.footerDivider
-		background-color: #95A8B7
+		background-color: white
 
 	.copyright
 		margin-top: 30px
-		color: #95A8B7
+		color: white
 
 
 
